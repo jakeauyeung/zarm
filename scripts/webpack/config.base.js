@@ -9,12 +9,10 @@ babelConfig.plugins.push([
     libraryName: 'zarm',
     libraryDirectory: 'components',
     style: true,
-    camel2DashComponentName: false,
   },
 ]);
 
 module.exports = {
-  devtool: 'eval-source-map',
   output: {
     path: path.resolve(__dirname, '../../assets'),
     filename: 'js/[name].js',
@@ -95,7 +93,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [' ', '.js', '.jsx', '.ts', '.tsx', '.scss'],
+    extensions: [' ', '.ts', '.tsx', '.js', '.jsx', '.scss'],
   },
 
   plugins: [],
